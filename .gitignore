@@ -1,3 +1,4 @@
 .DS_Store
 .ipynb_checkpoints/
 !qiqc_truncated.csv
+!source_questions_and_answers.csv
