@@ -1,0 +1,1203 @@
+content
+"Why do AI image generators have so much trouble rendering hands?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+The current AI image generators are not rewarded for drawing hands well.
+The training input for image models is a huge set of images and their captions. The objective here is to fit a function f(caption) -> image, by minimizing some loss function L(caption, image).
+L(caption, image) is high when the image is unrelated to the caption, and L(caption, image) is low when the image is very related to the caption. The image generation model is trained to minimize L(caption, image).
+However, L(caption, image) might be high for images with deformities, because L(caption, image) might only measure whether the image is related to the caption.
+If you don’t penalize deformities in the training, you can’t generate images free-of-deformities. As of my current understanding, generating images without deformities is still an open question."
+"At what point do you consider an LLM to have an ability to plan?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Consider the following query and response
+User:
+How many r are there in strawberry? Check your answer
+Assistant:
+There are 2 'r' letters in the word ""strawberry"".
+To check this answer, let's break down the word:
+s-t-r-a-w-b-e-r-r-y
+We can see that there are indeed two instances of the letter 'r' in ""strawberry"":
+1. The first 'r' comes after 't'
+2. The second 'r' is the second-to-last letter
+This confirms that the answer of 2 'r' letters is correct.
+
+https://poe.com/s/X6Rkh9wDJ50PSc...
+The LLM has planned to BS their justification when they print the number “2”.
+Bad planning is still planning."
+"How do you disable showing the Google Lens shortcut in the address bar?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+I am personally very irritated by the Google lens icon in the address bar.
+The only times I click it is when I misclick it.
+
+
+The solution is to simply right click the address bar and disable “Always Show Google Lens Shortcut”, as mentioned in https://support.google.com/chrom....
+
+
+What does not work - visiting chrome://flags/#enable-lens-overlay and changing the settings to “Disabled” did not make any changes for me."
+"Should you migrate from Quip to Notion?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+My company migrated from Quip to Notion. We did this because we assume that Quip will be shut down in a few years.
+These are the issues when migrating to Notion. Please check if you care about them
+Your formatting will be screwed up (text in code, LaTeX math, indentation)
+In-line comments will be gone
+There are many missing features in the equivalent spreadsheet feature
+Copying to gmail and copying from gmail no longer works easily
+You now need to click instead of mouseover to find who last edited the line. To me, who wrote the statement is usually more important what what was written.
+At every blank space you be prompted to “Write something, or press ‘space’ for AI, ‘/’ for commands”, which is irritating for me.
+Notion feels slower to me. I think there should be a benchmark to measure time difference key down to text appearing on screen for every writing software."
+"How is your experience like doing a title transfer with the DMV Virtual Office?
+
+Tong Hui Kang
+Lives in San Francisco Bay Area (2021-present)
+Generally, I do not recommend this, unless you know your seller really well. The process of doing a title transfer with the DMV Virtual Office is lengthy is prone to errors.
+These are the alternatives I recommend
+Spend a day queuing at the DMV to process the title transfer in-person
+Schedule a visit to a AAA branch to process a title transfer, but I think they do charge a premium
+If you still insist on doing a title transfer with the DMV Virtual Office, I describe the steps that I have gone through.
+This video from the DMV describes the initial steps you need to go through
+https://www.youtube.com/watch?v=...
+I want to emphasize some things in this process
+The order of the first name and the last name is not conventional on the title transfer form. Please READ carefully.
+If a smog test was done on the vehicle recently, you should include the smog test certification in the Additional Related Documents, in case they ask for it. This may save you one email exchange.
+You will also need to submit the Notice of Transfer and Release of Liability online. This lets DMV know that the seller is no longer responsible for parking/traffic violations or civil or criminal actions associated with the vehicle after the date of sale.
+That is the easy part. You will receive an email with a case number where you can check the status of your case. Note that the page does not always load and you may need to refresh multiple times for the information to be displayed.
+Now the hard part begins. You don’t know whether you have done the steps correctly. This is why I recommend spending a day in-person at the DMV or schedule a visit at the AAA branch instead, because the errors will be surfaced on the spot.
+Additional documents might be requested. In my case, the Smog Certificate was requested.
+
+
+I submitted my Smog Certificate by replying to the email they sent. After I submitted my Smog Certification, for quite some time I was unsure whether they have received my Smog Certificate. But if you look carefully in the screenshot, you see “Additional files were received with this case and are under review”, which is not obvious.
+When they are satisfied with your softcopy documents, you will need to make a payment. Note there there is an additional 2% for using a credit or debit card. The alternative involves sending some account and routing numbers which could take days to execute, so I would rather pay the extra 2%.
+After they have confirmed that they have received the payment, you will need to send the original title by mail. This is why I recommend that you use DMV Virtual Office if you know the seller well, because the title might get lost in the way.
+
+
+I used USPS Priority Mail, which was around $10, to mail the original title. If you feel rich you could use Priority Mail Express, which is faster and costs $30. I sent my mail at a USPS Post Office. I needed to handwrite my full address and the DMV’s address on the USPS envelope and hope that the computer parses my handwriting correctly. The destination is apparently a mailbox (PO box) where DMV will retrieve the documents from once in a while.
+USPS Priority Mail has tracking. It was recorded that the mail reached the PO box on Monday noon. However, my document is only processed on Thursday noon.
+The process, when complete, should look something like this.
+
+
+I write this for informational purposes only and I am not liable for any damages caused."
+"What are some names of high quality, honest auto-mechanics in or near Mountain View?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+I recommend Yarnell’s.
+My housemate and I each own a Toyota Prius and we have used their services for pre-purchase inspection and routine maintenance.
+https://yarnellsservicecenter.com/"
+"What’s an interesting application of game theory in everyday life?
+
+Tong Hui Kang
+Took a Game Theory course in college
+Divorce.
+You are splitting from your significant other (or maybe just your housemate).
+You collectively own an asset, say, the water purifier (which happens to be the most expensive item that my housemate and I collectively own).
+You value the water purifier at $150.
+Your housemate values the water purifier at $250.
+This is a complete information game, the valuations of the water purifier is public.
+You and your housemate submit a bid at the same time. The winner pays the smaller of either bids to the loser. In case of a tie, a coin is tossed to determine the winner.
+Let’s say you bid $180 and your housemate bids $200. Your housemate will pay you $180 and get the water purifier.
+You will get a payoff of $180 - the money that your housemate paid you.
+Your housemate will get a payoff of $250 - $180 = $70, because your housemate gets the water purifier but pays you $180.
+The question here is - what is the optimal bidding strategy?
+Should you always bid no more than how much you value the water purifier, so that you guarantee that you will never get a negative payoff?
+Because you get paid the losing bid if you lose, could you bid higher but still try to lose, to maximize the amount of money you get from your winning housemate?
+Here is a picture of our water purifier if you don’t want to look at the answer immediately.
+
+
+According to o1-mini, both players will bid half of the higher valuation. I think the mathematics looks correct, but might be wrong. But this is still a game theory problem.
+I thought of this problem a few years ago, but I think it should have been a homework problem somewhere already.
+I hope this answer helps you in your divorce proceedings."
+"My Bose SoundLink Mini II is not charging and a red light is flashing. What could be wrong?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+There is video on YouTube which recommended me to press the middle button. I did get the flashing red light to flash white, but when I unplugged the flashing white light disappeared, which is different from what I see the video.
+I managed to fix it with these steps
+Visit https://btu.bose.com
+Download the Bose Updater software (I use a Macbook)
+Install the software
+
+
+Open the software
+Connect your computer to the speaker
+I was using some Thunderbolt 3 cable, not too sure if this made a difference.
+You should see updates on the webpage where you downloaded the app
+
+
+
+
+With this, the issue was resolved."
+"How do you delete the Rythm bot from your Discord server?
+
+Tong Hui Kang
+Lives in San Francisco Bay Area (2021-present)
+As of August 2024, kicking and banning is apparently not enough, users could still start activities from a bot that is kicked or banned.
+
+
+You will need to edit the role permissions.
+
+
+And then disallow users to use activities.
+
+
+In general, when you start a public Discord server, it is better you start with minimum permissions for everyone."
+"What are some advice on how to practice LeetCode?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Train your train of thought. Do you read the question correctly? Why did you misread the question? Think of what you were wasting time thinking of, and whether you could have avoided that line of thought.
+Could you have written code in a way that is less prone to errors? Why did you get confused by your own code? Why did you use the wrong variable in that line of code? Having descriptive and consistent variable names helps (and it also helps your interviewer understand your code too).
+Reflect on whether could you have done it given your knowledge. You know binary search, you know Dijkstra, why did you think of using these two to solve the problem? Reflect why you did not manage to use that knowledge.
+Are there templates you should collect and reuse? Do you really need to recall from scratch some of the algorithms? If keep a handbook of common algorithms it will make your implementation faster. For interviews, you might still need to understand and memorize these templates."
+"Should you fine-tune from a base model or an instruct model?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Understand the definitions of pre-training, post-training, and fine-tuning.
+- Pre-training is the stage where you take all the text from the Internet and train a next-token predictor. The output is a base model. Note that this base model is not useful for downstream applications (you can try to experience it yourself with OpenAI davinci-002).
+- Post-training is the stage where you align the model to make coherent replies to user questions. There is a paper (Less is More for Alignment) that says 1000 examples in enough. I think the actual number should be in the millions. There are different methods to do post-training - SFT, RLHF, and DPO, just to name a few. We call the data used in post-training the post-training dataset. The output is an instruct model.
+- Fine-tuning is the stage where you give the model a small amount of examples (50 to 100) so that the model produces responses in a style that you want. The output is a fine-tuned model.
+There is a lot of work done in the post-training that you might want to inherit. Models fine-tuned from instruct models should know how to handle multi-turn conversations even though your fine-tuning dataset may consist of only single-turn responses. Models fine-tuned from instruct models inherit the safeguards that you might want for free. Models fine-tuned from instruct models inherit some ability to handle out-of-sample queries.
+You need more examples to fine-tune from a base model. For the base models, OpenAI mentioned in 2022 that needed to “aim for at least ~500 examples”. For the instruct models OpenAI recommends “starting with 50 well-crafted demonstrations”. For instruct models, you can see that the model is imitating the style of your fine-tuning dataset with only 10 examples. For base models, you need many more examples before you can feel the difference between from base model you fine-tuned from. It is more encouraging to fine-tune from an instruct model where you can see progress with a little manual work, compared to fine-tuning from a base model.
+OpenAI seems to prefer that you fine-tune from their instruct models. OpenAI’s current fine-tuning guide is focused on fine-tuning instruct models. I had to dig the archives for the statement that base models need at least 500 examples. OpenAI also considers its completion APIs as legacy.
+The open-source community tends to prefer to fine-tune from base models. For most models, even the open-weights models, the post-training dataset is not published. You do not know exactly what the model is tuned to do or not to do. A base model is a compression of the Internet and is mostly unopinionated, whereas the post-training dataset is very opinionated on what should the intended response be.
+The instruct model tends to be less creative than the base model. In May 2023, Andrej Karpathy shared that if he wanted a model that generates Pokemon names, he would use a base model to do that. The base model has lots of entropy and gives lots of diverse outputs. Therefore, if you want to generate more diverse outputs, you might want to fine-tune from the base model."
+"Should you still include a prompt when fine-tuning?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+The point of fine-tuning is to avoid writing prompts. In OpenAI’s fine-tuning guide, fine-tuning is only recommended when it’s easier to “show, not tell”. This therefore raises the question on whether do we still need to include a prompt when fine-tuning.
+However, I still suggest that you use a prompt and a concise one. For example, you want a solution that summarizes the content of the email in the title. A solution from pure prompt engineering would include long instructions on capitalization, what to focus on, and content length, for example. The prompt, when you do fine-tuning, should be just “Summarize the content of the email as a title”.
+There is this idea that it is easier to learn from the mistakes that you make, compared to the mistakes that someone else has made. It also means that it is easier to repeat what you could have done rather than what someone else could have done. It is more likely for the pre-fine-tuned model to arrive at your intended email titles if you include a concise prompt. I have not studied the research backing up this idea here.
+However, with more input tokens, it will cost more in terms of compute, and therefore more money.
+I don’t think you should include any more than the minimum context here. I expect that the model will learn style from your fine-tuning dataset, and having very detailed prompts might detract from that objective. Again, I have not studied the research backing up this idea here.
+Note that if you include a prompt in the fine-tuning dataset, you need to make sure you include the same prompt in production in the same exact format."
+"Should you fine-tune an LLM, or just do prompt engineering?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+You should always start with the simplest solution. The simplest solution is prompt engineering. See these arguments for simplicity. By shipping, you get to see what prompt engineering can achieve. You also have access to data that could be used to fine-tune your model.
+Fine-tuned models may be cheaper for the same performance. There are claims where you can achieve GPT-4 performance with a 7B model which can be served for cheap. However, the benchmark you need to beat now is Claude-3-Haiku, which is $0.25/$1.25. General-purpose LLMs are only getting cheaper over time, whereas the cost to serve your fine-tuned model is the same. General-purpose LLMs are easier to serve at scale because they can batch multiple requests.
+You should also consider the cost of shipping a solution with fine-tuning. You need to think of how much you are getting paid. If you spend one engineer-month to fine-tune something to reduce a yearly cost of $500 to $200, are you really saving costs?
+Fine-tuning may not solve your problem if prompt engineering can’t. If you cannot prompt engineer your way to generate a good response at least 10% of the time, fine-tuning will not save you. Fine-tuning only changes the style of the response. Fine-tuning does not increase the capabilities of the model or truly give the model new knowledge.
+Try squeezing performance out of prompt engineering and function calling first. You might be not correctly doing prompt engineering. You can provide feedback to general-purpose LLM. If you want to build a chatbot that writes a certain flavor of SQL, just execute the SQL and provide the error feedback to the chatbot. General-purpose LLMs may just adopt the feedback pretty well.
+There are many pitfalls that come along with fine-tuning. For prompt engineering, it is obvious if it works. If it does not work, change the prompt. For fine-tuning, if it does not work, it is not easy for a beginner to know what went wrong. There are many places where it could go wrong.
+Collecting a fine-tuning dataset is hard. Collecting a good fine-tuning dataset is not easy If writing a 100-word prompt is hard, collecting a 100-example fine-tuning dataset is even harder.
+It is possible that prompt engineering is harder than fine-tuning. In cases where it is easier to show rather than tell, fine-tuning makes more sense. It might be easier to collect and show 100 or 1000 examples than to write lengthy instructions for the model. An example of this use case is to generate interview questions based on the interviewee’s background. It is really hard to put down in words the qualities of a good question. Few-shot prompts may not work because they do not fully describe what you want. You will need to change the prompt when you change the model. Each model has their idiosyncrasies that you might need to specifically prompt against. New models are better and cheaper and old proprietary models will be deprecated. If you have a good fine-tuning dataset, you could probably just use the same dataset.
+You might need a fine-tuning dataset anyway. If you making serious LLM applications, you need evaluation even if you are only doing prompt engineering. The fine-tuning dataset can be repurposed into an evaluation dataset.
+It depends on the current state of the art. It depends on whether are there powerful models available to fine-tune. It depends on whether the performance of general-purpose models is much better than the models available to fine-tune. It depends on whether there are used platforms for fine-tuning. It depends on whether are there easy-to-use platforms for prompt engineering. It depends on the prices of calling general-purpose models versus deployed fine-tuned models.
+You just need to do fine-tuning anyway. You might just need to write a paper on how fine-tuning a certain dataset can “achieve a performance better than GPT-4” on a certain specific task. Or your client is paying you money and they do not appreciate a 100-word well-written prompt with rigorous evaluations. You want to build capability for your organization, or you want to tick certain checkboxes for yourself. It is still good for the company if there are a few people who know the nature of fine-tuning. Instead of regarding fine-tuning as a cure-all solution only if you had more staffing, it is good to know what are you missing (or what are you not missing). If this is the actual reason to fine-tune, you need to be aware and be honest."
+"How do I efficiently query a small random sample with Trino?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Usually if you want a random sample, you could do something like
+WITH products (product_id, product_name, price) AS (
+    VALUES
+    (1, 'Apple', 0.30),
+    (2, 'Orange', 0.50),
+    (3, 'Banana', 0.25),
+    (4, 'Mango', 1.50),
+    (5, 'Blueberry', 2.00),
+    (6, 'Grapes', 0.80),
+    (7, 'Kiwi', 0.70),
+    (8, 'Pineapple', 3.50),
+    (9, 'Watermelon', 5.00),
+    (10, 'Peach', 0.90)
+)
+SELECT product_id, product_name, price
+FROM products
+ORDER BY RANDOM()
+LIMIT 4
+
+This will produce something like
+ | product_id | product_name | price | 
+ | ---------- | ------------ | ----- | 
+ | 3          | Banana       | 0.25  | 
+ | 2          | Orange       | 0.50  | 
+ | 1          | Apple        | 0.30  | 
+ | 8          | Pineapple    | 3.50  | 
+
+There is this step where it does ORDER BY RANDOM(), which can be inefficient, as sorting is O(n log n). I am not sure if the query engine recognizes that you are limiting after sorting and does some query optimization.
+In PrestoDB there is this reservoir_sample where it does reservoir_sampling which is O(n+k). However, to my current knowledge, this has not been implemented in Trino.
+https://prestodb.io/docs/current..."
+"What does ""给主人留下些什么吧"" (as seen in GPT-4o's tokenizer o200k_base) actually mean? Where did it come from?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+The literal meaning of the statement is “please leave something for the owner”.
+
+
+In my interpretation, it means leave a comment for the original poster.
+“主人” here prefers to the original poster, “留下些什么吧” refers to leave a comment or something please.
+If you do an exact search, this phrase is frequently appears in forums.
+
+
+This phrase is usually found at the end together with a bit more text
+给主人留下些什么吧！~~
+评论热议
+It seems like the content is likely plagiarized from some forum webpage with the call to action “给主人留下些什么吧！~~”, and the title of the comment section “评论热议”. I am not sure which forum webpage is this from.
+As OpenAI crawled the Chinese Internet and trained their tokenizer with byte-pair encoding, “给主人留下些什么吧” appeared often enough to be token number 177431.
+https://gist.github.com/ctlllll/..."
+"What are your thoughts on the so-called ""gpt2-chatbot"" on the LMSYS Chatbot Arena?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+“gpt2-chatbot” on LMSYS Chatbot arena is rumored to be the next OpenAI model.
+There is this ongoing Kaggle competition where you get an LLM to solve Math Olympiad problems. I tried gpt2-chatbot to solve the set of 10 sample problems the competition organizer has published and these are the results. It got 4 out of 10 correct at zero-shot (zero prompting involved, I only used the question statement only).
+https://www.kaggle.com/competiti...
+I like how it does step-by-step reasoning in a manner not seen in the current models. The issue with the low-tier models is that they produce responses that look good but are actually obviously wrong. “gpt2-chatbot” does not pretend that they have an answer every time.
+The model still produces obviously wrong output though, like giving numbers that are obviously not a geometric sequence to the question “There exists a unique increasing geometric sequence of five 2-digit positive integers. What is their sum?”
+With better prompting and tool use, I think the model could solve all of the sample problems."
+"What is the difference between image generation models Stable Diffusion 3 and Stable Diffusion 3 Turbo?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Stable Diffusion 3 (SD3) and Stable Diffusion 3 Turbo (SD3-Turbo) are image models offered by Stability AI. [1][2]
+Unlike previous models published by Stability AI, SD3 and SD3-Turbo were not open-weights models when they were published.
+As of writing, SD3 costs 6.5 cents per image, whereas SD3-Turbo costs 4 cents per image.[3] This is competitive with DALL·E 3 at 4 cents per image, which has a similar performance.[4]
+This article [5] from Stability AI describes how they distilled SD3-Turbo from SD3. In the abstract, the article states that
+We introduce Latent Adversarial Diffusion Distillation (LADD), a novel distillation approach overcoming the limitations of ADD.
+We apply LADD to Stable Diffusion 3 (8B) to obtain SD3-Turbo, a fast model that matches the performance of state-of-the-art text-to-image generators using only four unguided sampling steps.
+
+In summary, SD3-Turbo is a distillation of SD3. In layperson language, SD3-Turbo is a smaller model (which is cheaper and faster to run) compared to SD3. The performance of SD3-Turbo might be slightly worse than SD3.
+Here are some images generated with SD3 versus SD3-Turbo, at the boundary of their abilities:
+a cat holding a sign with the word woof
+SD3
+
+
+SD3-Turbo
+
+
+a chalkboard with the number 1 000 000 007
+SD3
+
+
+SD3-Turbo
+
+
+Footnotes
+[1] Stable Diffusion 3 — Stability AI
+[2] Stable Diffusion 3 API Now Available — Stability AI
+[3] Stability AI - Developer Platform
+[4] Pricing
+[5] Page on arxiv.org"
+"As a programmer who used to ace hard LeetCode coding problems with ease, what cloud be the reason that I struggle with easy/medium problems now, even though I did not stop practicing? How can I be good again?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+It is possible that some LeetCode hards in the past could now be considered medium questions today.
+This graph shows the rating of the contest questions over time. Usually the first question is marked as easy, the second and third question marked as medium and the last question is marked as hard. After the contest, the contest questions usually then get introduced as LeetCode question.
+Note that it is also much easier to get high ratings in the past, which also suggests that recent LeetCode contest questions are getting harder.
+
+
+(Plotted with https://poe.com/huikang/15129280...)"
+"How do you say “fyi” in Japanese and Chinese?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+If you are communicating with people who already know English, just write “fyi”.
+“fyi” is used in casual written communication to indicate that the information being shared is not urgent or critical, but rather just something the recipient should be aware of.
+I think the most similar set of Chinese characters that communicates “fyi” is 备注 (which is very similar to “PS”), but this is only used after the sign-off of a signed message."
+"Is there a free way to save mermaid-generated diagrams in editable form for use in Visio or PPT editing?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+My understanding is that mermaid is implemented in Javascript.
+https://github.com/mermaid-js/me...
+An human developer that wants to implement a mermaid syntax -> pptx would need to manually enumerate all these implementations.
+https://mermaid.js.org/config/us...
+I feel that mermaid syntax -> pptx is quite a niche usage, and I don’t forsee such an application being made by a human."
+"Space Mechanics Test
+Not including a few keywords to show people what to expect if they join.
+
+What is an example of a self-referencing Quora answer?
+
+Tong Hui Kang
+Software Engineer (2021-present)
+This is an example of a self-referencing Quora answer.
+Tong Hui Kang's answer to What is an example of a self-referencing Quora answer? in Space Mechanics Test"
+"What are the major takeaways from the Nvidia GTC conference?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+We learnt that GPT-4 is a 1.8 trillion Mixture-of-Experts model, trained over 90 days using this amount of GPUs.
+
+
+This confirms rumors back in June 2023 that GPT-4 has 220B parameters and is 16-way mixture model with 8 sets of weights. The total is approximately 1.8 trillion parameters.
+It is a good reference number on the amount of resources you at least need if you want to beat GPT-4."
+"With the release of Devin (software engineering AI), how will that impact the market?
+
+Tong Hui Kang
+Software Engineer (2021-present)
+Devin is an autonomous agent that solves engineering tasks through the use of its own shell, code editor, and web browser. This is their demo on Twitter, for reference.
+Assume we have a business where
+You need help on a software engineering problem (e.g. how to exit vim, find the best prompt for a classification task where you already have the data, how to build a chatbot that writes SQL and runs SQL queries served with an API)
+You make a video call to the business platform, and a human software engineer (a competent one, but one that you have never worked with) answers your call.
+You work with the software engineer to solve the problem. You may allow the software engineer to use tools, like browsing the Internet or taking over your computer to write and execute code.
+The human software engineer working in this business has a real risk of getting out of job in the next few years with a tool like Devin.
+The software engineer could only work on one thing at the time, the AI can run in parallel trying out different approaches at the same time.
+The AI can fully document their plans and thought process. It is very tedious for the human software engineer to do that.
+However, there is a few things to note here
+Every time you make a new call, you need provide the necessary context to the software engineer.
+You still need to spend quite a lot more time with the AI software engineer, compared to a new hire who has worked for a few months.
+You do not trust the AI software engineer to make changes without your explicit approval.
+There might be advances in technology that allow the AI software engineer to learn the organization’s practices and tastes as you interact with it. I think that technology development will take some time.
+Ultimately, there is no laws in Physics, or bounds in theoretical computer science, that says I cannot be replaced by a computer."
+"You have a classifier with 100% precision. You have another classifier with 100% recall. What happens when you combine them?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+This is what a classifier with 100% precision actually means
+A classifier with 100% precision means that all the instances it identifies as positive are actually positive. In other words, there are no false positives.
+A classifier that correctly surfaces 1 true positive example among 10,000 items with 100 actual positive has 100% precision. In this example, the recall is 1%.
+This is what a classifier with 100% recall actually means
+A classifier with 100% recall means that it identifies all the actual positive instances as positive. In other words, there are no false negatives.
+A classifier that correctly suggests all 10,000 as positive among 10,000 items with 100 actual positive has 100% recall. In this example, its precision is 1%.
+The only guarantee of the combined classifier is that it has 100% precision. Again, that could mean that the classifier could only surface one true positive example among ten thousand items with a hundred actual positives. Its recall can be very bad, making it useless."
+"Does Playground v2 and Playground v2.5 have the same model architecture but different model weights?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+The image models Playground v2 and Playground v2.5 use the same model architecture.
+https://playground.com/blog/play...
+The official blog post states that Playground v2.5 uses the same model architecture as Playground v2.
+With this release, we intentionally chose to push the bounds of our current SDXL architecture.
+What we found during our research was that a novel set of methods drove a surprisingly significant increase in aesthetic quality, even with the current architecture.
+
+Their technical report also states their explicit choice of not changing the underlying model architecture for Playground v2.5.
+Following Playground v2 [20], we chose not to change the underlying model architecture for this work; instead, we focused on analyzing and improving our training recipe and pushing the model’s aesthetic quality to a new level."
+"What are some instances where the real content is pretending to be AI-generated content?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+I want to share these two significant instances where comedians parodied AI-generated content by creating the real content.
+John Oliver did a 10-minute segment on Midjourney, where he investigated two Discord users for producing images of himself. This was in August 2022, image generation capabilities were still nascent, especially for concepts that are not already present in the real world.
+
+
+John Oliver went to fix this by marrying a cabbage on stage, and the result is this iconic 2-by-2 matrix you usually see in the Midjourney Discord servers.
+
+
+In 15 February 2024, OpenAI released Sora, and it is a huge leap from the state-of-the-art of AI-generated videos.
+A few days later, Will Smith filmed himself actually eating spaghetti in the comical manner depicted in the AI-generated videos just a year prior, and claiming that AI videos “is getting out of hand”.
+https://twitter.com/WillSmith2re..."
+"How is AI revolutionizing everyday tasks in the data science industry?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+You no longer need to memorize all the complex SQL keywords.
+For example, you have this task
+given a table of uid, transition_unix_time, calculate the intervals
+
+There are chatbots that are able to translate your human language query into working SQL code.
+WITH transitions (uid, transition_unix_time) AS (
+    VALUES
+    (1, 1610000000),
+    (1, 1610003600),
+    (1, 1610007200),
+    (2, 1610000800),
+    (2, 1610004400),
+    (3, 1610005000)
+)
+SELECT
+    uid,
+    transition_unix_time,
+    transition_unix_time - LAG(transition_unix_time) OVER (PARTITION BY uid ORDER BY transition_unix_time) AS interval
+FROM transitions
+ORDER BY uid, transition_unix_time
+LIMIT 10
+
+The chatbot is also able to run the code and verifies that it works. You can also ask for follow-ups, like
+include more data in the mock table, calculate the standard deviation for each user and filter intervals that are greater than a standard deviation
+
+When you are happy with the result of the chatbot, you can then copy over the query, edit it, and use the edited query on the actual business data.
+In the future, you might not even need to edit it. The AI might actually be able to directly access and query the actual business data and directly give you the insights."
+"How can one keep track of new vocabulary when learning Japanese?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+On Duolingo there is a tab where it keeps track of all the words that you have learnt. However, there is only two types of ordering on Duolingo, recently learned and “alphabetical”.
+
+
+I wanted a better view of the words that I have learnt. For example, I want all the words that I can use to describe a person, for example,しずか (quiet) にぎやか (lively) かわいい (cute, pretty) おもしろい (interesting, fun, funny).
+I could get GPT-4 to build word clusters like this.
+
+
+It needs refinement though, for example I do want to separate the adjectives that can be used to describe a person from other adjectives. Regardless, this is a much better starting point compared to manually indexing the words yourself.
+When you want to add a bunch of new words, you do not need to start from scratch. You could also get GPT-4 to read everything you have learnt and then suggest ways where the new words should go to."
+"What is your mnemonic for remembering which is this (これ, kore) and that (それ, sore)?
+
+Tong Hui Kang
+Learning Japanese to avoid reading subtitles
+There is a meme text you might see somewhere.
+
+
+Kokoro (心, こころ), as I understand, refers to the metaphorical heart. I remember my heart is here, so これ (kore) is this rather than that (それ, sore)."
+"What is your mnemonic on remembering which is ち (chi) and which is さ (sa)?
+
+Tong Hui Kang
+Learning Japanese to avoid reading subtitles
+My best mnemonic for now is
+ち (chi) is pronounced with your tongue in between your teeth. The bottom part of the character is like a tongue facing right.
+さ (sa) is pronounced with your teeth and tongue apart. The right side of the character is open.
+There are other mnemonics I am aware of but that involves opposites. It takes extra processing time for me.
+The bottom part of さ looks like c or 吃 (chi) but it is actually sa
+Here, we have Chisato (ちさと) from Lycoris Recoil spotting a super car.
+
+
+Featured in: Space Mechanics Test by Tong Hui Kang"
+"What is the difference between a data scientist and a machine learning engineer?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+There is this article by Data Captains which has a nice petal plot shows what a data scientist versus a machine learning engineer could be working on.
+https://www.datacaptains.com/blo...
+
+
+Please note that different companies have different definitions of what is meant to be a data scientist versus a machine learning engineer. Please check the job description and confirm with the hiring manager what is the expectations with the job.
+It is not expected that you know everything. However, you are expected to develop certain skills on the job. You definitely should not be doing everything, especially when the organization is large."
+"Which Japanese anime takes place in your country?
+
+Tong Hui Kang
+Learning Japanese to avoid reading subtitles
+There is this episode (episode 6) in the anime “A Place Further than the Universe” featuring Singapore.
+
+
+
+
+https://en.wikipedia.org/wiki/A_..."
+"What are some interesting questions asked in an exam?
+
+Tong Hui Kang
+Singaporean
+I would like to share this question that most students of age 16 will take in Singapore.
+Study Source E. Do you think the cartoonist would have agreed with Chamberlain’s policy of appeasement? Explain your answer.
+
+
+
+These are “Source-Based questions” where students are expected to respond to the question given a source. One of the most interesting sources is cartoons, like the one above.
+These are some of the possible questions that could be asked
+Do you think the cartoonist is American or Russian? Explain your answer.
+What is the motive behind this article? Explain your answer.
+How useful is this source in explaining the reasons behind (event)? Explain your answer.
+The thing I like about these questions is that you can’t memorize the answer for the questions (although there is an expected structure to answer these questions well). I hope when students train for these questions, they will be more critical at analyzing the information presented to them.
+The specimen paper is available here."
+"What is a mnemonic to memorize hiragana for Chinese speakers?
+
+Tong Hui Kang
+Learning Japanese to avoid reading subtitles
+The Japanese writing system uses a combination of logographic kanji, which are adopted Chinese characters, and syllabic hiragana and katakana. Learning the hiragana and katakana is something like alphabet in English.
+As someone who already have some knowledge of Chinese and English, I hope not to start from zero when learning the alphabet. This is a mnemonic that I am using to memorize the hiragana. The initial suggestion was produced by GPT-4, but I have made edits.
+This is a work in progress until I could memorize the characters here.
+vowels
+あ (a) - The archetypical hiragana.
+い (i) - This character looks the left part of 以 (yi)
+う (u) - tbc
+え (e) - Looks like and sounds like the left part of 诶 (ei)
+お (o) - tbc
+k-series
+か (ka) - Looks like and sounds like 加 (jia) or 咖 (ka)
+き (ki) - Looks like and sounds like a key
+く (ku) - Looks like a cuckoo bird’s beak when it is coo-ing / ku-ing
+け (ke) - Looks like and somewhat sounds like 可 (ke) or 何 (he)
+こ (ko) - Looks like and sounds like 口 (kǒu)
+s-series
+さ (sa) - This looks similar to ち (chi), see notes below.
+し (shi) - This is the second character of the first word you learn in Duolingo (すし for sushi)
+す (su) - Looks like and sounds like 束 (shu)
+せ (se) - Looks like and sounds like 世 (shì)
+そ (so) - Sounds like 寿 (shou), looks like 子 which has a related concept with the Chinese character.
+t-series
+た (ta) - Looks like and sounds like 他 (ta)
+ち (chi) - This looks similar to さ (sa), see notes below.
+つ (tsu) - tbc
+て (te) - Looks like the letter T
+と (to) - Looks like a sounds like 土 (tǔ)
+n-series
+な (na) - Somewhat looks like and sounds like 奈 (nai)
+に (ni) - Somewhat looks like and sounds like 你 (ni)
+ぬ (nu) - Some parts of the character looks like 女 (nv), with a curl at the end
+ね (ne) - Looks like a cat (ねこ neko) resting beside a telephone pole, with their tail curled
+の (no) - You see this is anime titles, and one common use of possession 的 (de)
+h-series
+は (ha) - tbc
+ひ (hi) - Looks like a horseshoe, and “hee” is a probably a possible sound a horse can make.
+ふ (fu) - Looks like and sounds like 乎 (hu)
+へ (he) - tbc
+ほ (ho) - tbc
+m-series
+ま (ma) - Looks like and sounds like 馬 (mǎ)
+み (mi) - Somewhat looks like and sounds like 米 (mi)
+む (mu) - tbc
+め (me) - Looks like a front view of a sheep with its face and two ears. The sheep goes “meeeh”.
+も (mo) - Looks like and sounds like 毛 (mao)
+y-series
+や (ya) - Looks like and sounds like 也 (yě)
+ゆ (yu) - The character looks like a fish, somewhat sounds like 鱼 (yu)
+よ (yo) - Looks like and somewhat sounds like the top part of 与 (yǔ)
+r-series
+ら (ra) - Looks like a 5
+り (ri) - Looks like and sounds like the right part of 利 (lì)
+る (ru) - Someone with a ruby - when robbed it will look like ろ (ro)
+れ (re) - tbc
+ろ (ro) - Someone who was robbed of a ruby.
+w-series
+わ (wa) - Somewhat looks like and somewhat sounds like 枉 (wang)
+を (wo) - tbc
+n-series
+ん (n) - Looks like the letter n anyway
+Please also take note some hiragana that look like each other
+ち (chi) and さ (sa) - ち (chi) is pronounced with your lips at your teeth and the right side is closed. For さ (sa), it is open.
+は (ha) and ほ (ho)
+ぬ (nu) and め (me)
+ね (ne) and れ (re) and わ (wa)
+る (ru) and ろ (ro) - る (ru) is someone with a ruby on their stomach, and but was ろ (ro)bbed
+These hiragana look similar, but I don’t really confuse them
+あ (a) and お (o)
+き (ki) and ま (ma)"
+"Have the authors of the AlphaGeometry paper ever competed in the International Mathematical Olympiad (IMO)?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+The paper claims IMO gold medallist performance on IMO geometry problems (25 out of 30 problems solved). The methods in the paper only uses purely synthetic data.
+The authors in the AlphaGeometry paper are
+Trieu H. Trinh
+Yuhuai Wu
+Quoc V. Le
+He He
+Thang Luong
+https://www.nature.com/articles/...
+I did not managed to find matching names for the authors in the IMO search database.
+https://www.imo-official.org/sea...
+Correct me if I am wrong."
+"Can ChatGPT give accurate answers for LeetCode coding questions?
+
+Tong Hui Kang
+Software Engineer (2021-present)
+If the problem statement is already inside the training set, we would expect that ChatGPT / GPT-4 to regurgitate a working algorithm. You could achieve the same by doing a Google search and copying over the solution. We should only be concerned with the performance on the new contest questions.
+When GPT-4 was announced in March 2023, this is the reported performance.
+
+
+ChatGPT / GPT-4 was not given a chance to execute their code and fix their code. In exercises and interviews, humans are not expected to produce the full code at once. Humans run sample test cases to check whether is it correct, compare the output of an correct but inefficient algorithm with an efficient but probably wrong algorithm, and add debugging statements.
+If it is possible fully automate the process, someone would have used it to score first place in the LeetCode contest (which has not been done, and I am not aware that it is against the rules for now)."
+"Why do some Pokemon Go players defeat all gym defenders but not take the gym for themselves?
+
+Tong Hui Kang
+Lives in San Francisco Bay Area (2021-present)
+It is possible that you are a passenger in the car and started attempting defeating the gym when you were in range. But by the time you defeat the gym, the car has moved, leaving the gym empty."
+"Where are the headquarters of Quora in the USA?
+
+Tong Hui Kang
+Software Engineer at Quora
+As of December 2023, Quora Inc main office is 605 Castro Street, Mountain View, CA 94041.
+You can find this information in the emails from Quora.
+
+
+Quora used to operate from two offices, 650 Castro Street and 605 Castro Street. However, Quora has gone remote-first, and the lease for 650 Castro Street has already expired."
+"How does Lee Hsien Loong justify being the highest-paid prime minister in the world?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+The people voted for it. Well, as a parliamentary representative democracy, the people voted for the package presented by the political party rather than the individual policies championed by the party, and the package includes the current levels of ministerial salaries.
+The main argument (from the ruling party People’s Action Party) is that we should pay our leaders an amount of what they could have earned in the private sector.
+I buy that argument. There are many Singaporeans that do not. It is up to the ruling party to convince people.
+On whether Lee Hsien Loong can earn millions a year in private service, refer to another question I asked years ago.
+Can all of Singapore's ministers earn million dollar annual salaries in the true private sector?"
+"Does machine learning have experimentalists and theorists like in physics?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+The most impactful publications of machine learning in the recent decade are experiments. They are impactful because they built something that worked. You could call them experimentalists.
+For the most popular architectures (e.g. attention) and methods (e.g. dropout), we would expect some explanation on why these tricks work. Even though there is strong research interest for theorists to find out the answer, there is still no widely accepted explanation. There are still theorists who are trying to find out the answer, mostly in universities."
+"The average Taiwanese soldiers have the reputation of being Strawberry Soldiers (草莓兵) but how do they compare to the average Singaporean soldiers? Are the reputation of the average Singaporean soldier better, worse, or the same?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Apparently, from some Internet research, the terminology 草莓兵 is used by people in mainland China to refer to Taiwanese soldiers. There are also reference to the ban on physical activity when the temperate is above 33 degrees Celsius.
+https://www.google.com/search?q=...
+In Singapore, there are similar measures against carrying out physical activity in hot weather.
+http://icemilotehpeng.blogspot.c...
+At the highest ""Code Black"" category, above 33 degrees celsius, heat injury risk is very high. Troops work 15 minutes at a stretch, followed by 30 minutes rest.
+
+This is a safety measure. There is no point in physical training if the result is injury, or worse, death.
+Every death of a Singapore soldier is national news. Even though sovereignty is important and Singapore is paying the price with money and, occasionally human lives, we still cannot justify soldiers dying during peacetime training.
+My sense is that Singaporeans are more concerned about the safety of their soldiers over the increase in safety regulations during training."
+"In writing resume bullet points, should I use the Google XYZ formula or the STAR format?
+
+Tong Hui Kang
+Software Engineer at Quora
+The STAR format consists for four parts - Situation, Task, Action, Results. These two resources describes the STAR format.
+This is how a STAR format bullet point in a tech resume would look like
+Worked with three other engineers in the mobile team (situation) to fix slow loading issues (task). Optimized GraphQL request waterfalls (action) and reduced page loading time by 10% (result).
+
+The Google’s XYZ formula suggests that you write your bullet point in the following format - Accomplished X, as measured by Y, by doing Z
+The above bullet point could have been summarized in Google XYZ formula as
+Reduced mobile page loading time (X) by 10% (Y) from optimizing GraphQL request waterfalls (Z)
+
+The advantage of Google XYZ formula is that you put your achievement in front, where it is most likely read. The situation and task is not the most important information in the story (though you might want to postface your bullet point that you worked “with three other engineers”).
+However, in interviews, STAR format provide a structure for you to build your story. It is also easier to insert additional detail into the story - for example how did you triage the cause of the slow loading times, the challenges that you have faced.
+The recommendations here are different because the setting of the resume screen and the interview session is different. In the resume screen, time is limited and hiring managers are trying to find a reason to accept or reject your resume, whereas in interviews you should have their full attention."
+"What do you think of the newly imposed plastic bag charge in Singapore?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+From July 3 this year, customers will have to fork out at least 5 cents for each plastic bag that they take from large supermarket operators in Singapore.
+https://www.channelnewsasia.com/...
+This is required by law, which refers to plastic bags as “disposable carrier bags”.
+https://sso.agc.gov.sg/Acts-Supp...
+Here is some related conversation on Reddit.
+https://www.reddit.com/r/singapo...
+I have previously (four years ago) wrote an opinion.
+Tong Hui Kang's answer to Do you think that Singapore supermarkets should impose a levy on plastic bags?
+My opinions have changed. I don’t oppose such a charge now, and now I see there is some merit to it. However, I still don’t think we should have strong opinions against both options.
+Currently at where I live in California, there is a plastic bag charge of 10 cents per bag. People here just seem to accept the fact and honestly declare at the self-checkout counter in the grocery store on how many store-provided bags do they use. I pretty much have accepted the fact too - but that was mainly because there are other facts I still couldn’t accept.
+I also visited Taipei once, they also impose a similar plastic bag charge. Interestingly, that plastic bags in Taipei have a fancy hologram label.
+https://www.reddit.com/r/mildlyi...
+The plastic bag charge did change my behavior in California.
+If I am buying only a few items I do not request for a plastic bag. For some items like a carton of eggs, I would have definitely requested for a plastic bag if there was not a charge, but now I would only request a bag only if I am buying more items. I will take the risk of having my eggs broken.
+If I am buying many things from a grocery store, my housemate and I will try to remember to bring some plastic bags. There might be some plastic bags stored in the car that I use, but I am not too sure about that right now. (Of course, you should not keep to many visible things in your car to reduce the chances of getting your window smashed.)
+I don’t see the point of driving to my house to get plastic bags if I forgot to have them in the car. The additional mileage and risk taken is not worth it, neither it is environmentally friendly. I see the plastic bag charge as a penalty for forgetting to bring a plastic bag.
+I do not use a wastepaper basket for our trash can. When I was raised in Singapore we had been using a wastepaper basket for the entire house of four. The 3-gallon wastepaper basket sized trash can is lined with a 3-gallon plastic bag from the grocery store. When the trash can is full, we wrap it and throw it down the rubbish chute. On hindsight, this is quite an inefficient process because every time the trash is full, someone in the house needs to bend their back, tie the bag and throw it down the chute. Currently where I live in California, we have a 13 gallon trash can and a 13 gallon trash bag which costs $9 for 45 bags (20 cents per bag). We bag our trash and throw it probably once a week, we should have done this in Singapore too.
+Of course, in Singapore you can express you frustration at the ballot box. However, please note that the Worker’s Party also called for the introduction of a single-use plastic charge."
+"What are some trivial tasks that GPT-4 completely fails at?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+There is this “brain teaser” posted on Twitter
+There are two doors, one leading to freedom and the other to captivity. Each door is guarded by a guard. You know the guard who always tells the truth and the other guard who always lies. You can only ask one question to one guard to determine which door leads to freedom. What is the simplest question you ask the truth-telling guard?
+
+This is what GPT-4 answered.
+You don't need to know which guard is the truth-teller to solve this problem. Instead, ask either guard the following question:
+""If I were to ask the other guard which door leads to freedom, what would they say?""
+Both guards will point to the door leading to captivity. If you ask the truth-telling guard, they will honestly tell you that the lying guard would point to the door leading to captivity. If you ask the lying guard, they will lie about the truth-telling guard's response and also point to the door leading to captivity.
+In both cases, the answer to your question will be the door leading to captivity. Knowing this, choose the other door to find freedom.
+
+If you understood the question, this is a completely wrong answer. You simply ask the truth-telling guard which door leads to freedom."
+"Can a biology student become a software engineer?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+One of Quora’s engineers studied biology and is now one of the Python Core developers."
+"What makes ChatGPT coding/programming not fully reliable?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Are humans coding/programming fully reliable anyway?
+The main difference for now is that humans can execute the code. The human should check if the execution output looks good before giving the response.
+The current state of ChatGPT does not run the code. You need to run the code. You can tell ChatGPT what errors you get from running the code, and ChatGPT might be able to give some useful follow-up responses.
+This is one successful example of GPT-4 fixing the code after providing some feedback.
+https://poe.com/huikang/15129279...
+However, you might still get responses like this.
+https://poe.com/huikang/15129279..."
+"How many Singaporeans are eligible for presidency?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+The Wikipedia article details the requirements. This question (which I asked 7 years ago) seeks to estimate the number of Singaporeans that are eligible.
+https://en.wikipedia.org/wiki/Pr...
+The most notable requirement is that the candidate must fulfill either a public sector service requirement or private sector service requirement. In the service requirement, the candidate needs to have held office for at least three years in the last 20 years.
+In an official reply from Chan Chun Sing, there are approximately 50 + 1200 such positions.
+ELD does not track the number of Singaporeans qualified to be elected as President. There are currently about 50 public service positions that may fulfil the public sector service requirement. For persons relying on the private sector service requirement, there are currently more than 1,200 companies with average shareholders’ equity at or exceeding $500m."
+"Is SUTD less stressful than NUS/NTU?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+There is a saying for most courses in Singapore public universities - Once admitted, it is easy to finish, it is difficult to excel.
+Your stress levels depends on how much you want.
+There is freedom how much effort you want to put in. You can choose to put in the bare minimum effort for your projects and examinations, or you can choose to get to the top of the class. You can choose to complete just one unremarkable internship to fulfill graduation requirements, or you can choose to hustle and grind for the most coveted internships.
+This is what I summarize as the main differences between SUTD and NUS/NTU
+The first year in SUTD is held in the classroom, which mean you will interact with the same classmates for all courses for two or three semesters.
+The first year in SUTD is common. The classmates you work with in the first year may not get the same degree with you i.e. “interdisciplinary experience”.
+Most courses have group projects.
+The cohort size of SUTD is small (still around 400 to 500).
+If you are aiming for the top grades, doing well by yourself alone is not sufficient. As SUTD has more course projects, you need to get your project group mates to contribute. It is also not feasible to do all the work for your course projects. This could contribute to stress.
+You are more likely to have more friends and acquaintances from the first year you spend together in SUTD. This might contribute to less stress. Or more.
+As SUTD is an engineering-focused university with an unsurprising gender ratio, if you are a heterosexual male looking for a traditional relationship, you might feel more stress. Or less, if you do not care about a relationship.
+As the cohort size is small, there is less flexibility for the curriculum. Most required classes are only held once per year. If you fail the course, you usually could only retake the course in one year later. This might give significant pressure if you are failing the course. This could contribute to stress.
+There is less awareness of how high the ceiling is, because of the small cohort size. Throughout my years, I am not aware of anyone in my cohort who scored a Bay Area internship, or interned at Google and Facebook in Singapore. I thought that was simply impossible. There are people who did that in NUS (probably not as often in NTU), see Reddit thread for reference. You would not need to go through the stress of not winning a lottery if you are not aware that there is even one in the first place."
+"Do Singaporean students buy their textbooks? If so, where do they buy them from?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Actually an interesting question.
+In Primary school (Year 1–6) and Lower Secondary school (Year 7–8), we have a booklist that is produced by the school. It looks something like this. [1]
+
+
+As mentioned in the booklist, you can buy the books in the school bookshop. Apparently, some books are cheaper in a nationwide bookstore Popular bookstore compared to the school bookshop, and parents might save a few dollars buying from there. Probably I might not had paid attention, I did not remember anyone reusing a textbook, other than one possibly from their elder sibling. There are donation drives [3] where you can donate and collect textbooks.
+You see that there are textbooks and activity books. Lessons are conducted with the textbook. Homework is written in the activity book. When the homework is due, the activity book is passed to the teacher, who will mark the homework and return the activity book in the next lesson or two.
+For Upper Secondary school (Year 9–10) and Junior College (Year 11–12), there are no longer activity books (at least in the secondary school that I have studied in).
+
+
+The studies in Upper Secondary is geared towards preparation for the national examinations, such as the O levels. There are no longer activity books that you need to submit, but there is still (a lot of) homework. Homework is now printed in A4 paper, and you write your solutions on the paper or on additional foolscap papers. Students might need to pay for printing.
+There might not be a market for Upper Secondary activity books because teachers want to decide exactly what questions should the students work on for homework. The student cohorts in different classes or different schools can vary significantly in their academic ability, and it is hard to craft a one-size-fits-all problem set.
+For math and science subjects, you see that there is also these topical books. It is a required purchase, even though I don’t remember opening these books at all. The questions found in the A4-printed homework are actually from these topical books. The school requires the students to buy these books to protect the school from copyright lawsuits.
+Students will also need to buy the Ten Year Series (TYS). The TYS contains the questions from the national examinations from the past ten years, and will be heavily used closer to the dates of the national examinations. Again, this is a required purchase to protect the school from lawsuits. A class representative will be collecting the money from everyone in the class.
+In Junior College, we do not have textbooks anymore. The content is mostly delivered the slides, which will be uploaded into school learning management portal. Students are still required to buy books with the problem statements and Ten Year Series (or Thirty Year Series) for the same reason.
+[1] Anglo-Chinese School Booklist
+[2] Anderson Secondary School Booklist
+[3] S'pore public urged to donate another 150,000 pre-loved textbooks to hit 500,000 target"
+"If I am a student councilor in Singapore, do I get a minus 2 point for L1R5?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Thanks for the A2A.
+L1R5 is the admission criteria for junior colleges in Singapore, based on your O level results.
+https://www.moe.gov.sg/post-seco...
+This document details the grading system for the two bonus points for L1R5.
+
+
+For the two bonus points, you need a minimum Level 3 in all four domains with at least a Level 4 in one domain. You can read the document for what qualifies for each domain.
+It seems that if you have been participating in activities your class or your CCA peers has organized for you, it should be easy for you to hit Level 3 in all domains, and probably a Level 4 in some domain.
+What is the most challenging is the leadership component, which require you to step up for the role. If you are a student councilor, there should be plenty of opportunities for you to complete one of the criteria here.
+
+
+Ultimately, it is not who you are, but what you do.
+Hope this answer is better than people (or bots) who could not judge whether an LLM generated answer is adding any value to this question."
+"Is it bad to have 70 comments on your first code review as an intern?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+I think it is more of an issue with your manager or mentor or the company processes rather than the issue with the intern.
+Your manager should have planned to have your first code submissions to be simple.
+Even for large scale implementations later in your tenure, we would expect most of the comments to happen during the design rather than during the implementation.
+Usually code review comments are only about the implementation - whether is your implementation is correct, whether your implementation follows standards (naming, comments, for example), or are about clarification questions (whether have you checked something, for example)."
+"Who are some top rated Python coders on Codeforces?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Top competitive programmers almost always use C++. Many of them know how to use Python but rarely use it.
+On Codeforces, I follow Codeforces grandmasters who frequently use Python for more than half of their submissions.
+conqueror_of_tourist is currently the highest rated Python programmer at 2737. He was the first Python grandmaster. If I traced his identity correctly, he is Dilhan Salgado who represented Carnegie Mellon University for ICPC and Putnam.
+https://codeforces.com/profile/c...
+pajenegod was almost the first Python grandmaster but the contest that would have made him grandmaster was unrated. He is currently not very active on Codeforces contests, but still often comment on posts related to Python. pajenegod has been a major contributor to PyRival, a collection of Python algorithm templates.
+https://codeforces.com/profile/p...
+Kiri8128 was the first Python grandmaster who only use Python in their submissions. On the other hand, conqueror_of_tourist and pajenegod often switch to C++ when they suspect that the time limit is tight and any Python solution is not likely to pass.
+https://codeforces.com/profile/K..."
+"How do I prepare for California DMV written exam?
+
+Tong Hui Kang
+Lives in San Francisco Bay Area (2021-present)
+I took the written exam this morning and passed it on the second try.
+The exam was taken online. There is an application fee of $35. It allows for three attempts.
+https://www.dmv.ca.gov/portal/ne...
+Some sample questions are available on the official website.
+https://www.dmv.ca.gov/portal/dr...
+I spent quite some time looking through the handbook, and trying out some questions on some shady websites.
+On hindsight, I should have prepared it this way. This would have been much more effective and efficient.
+Download the official copy of the handbook.
+Read Sections 8 to 12 (An Introduction to Driving, Navigating the Roads, Laws and Rules of the Road, Safe Driving, Alcohol and Drugs) end-to-end for a few times.
+Control-F these words and memorize their numbers. If a number seems unfamiliar, it is probably not the answer in the test
+feet
+inches
+second
+mph
+Control-F these words and memorize the rules
+right-of-way
+Take the test when you are somewhat confident.
+One third of the questions are common sense questions with an obvious answer. Then one third of the questions are numerical. One third of the questions may need some memorization of the rules.
+I failed my first attempt with around 10 mistakes, revised for another 20 minutes, and completed my second attempt with 2 mistakes. There are 50 three-choice questions.
+Hope this helps, all the best!"
+"Why doesn't Mike Mirzayanov attend any contests on codeforces written by other users?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Mike Mirzayanov, who runs Codeforces, sometimes attends contests on other platforms.
+The most recent participation that I know if is 2021 Google Code Jam Round 2, which he got 181th place and won him a T-shirt. He did not participate in Round 3.
+https://codingcompetitions.withg..."
+"How common is it for foreign students studying in Singapore government schools to take the Singapore Mother Tongue subject such as Chinese?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Taking a Mother Tongue subject is not necessary for most foreign students, unless they happen to already have studied the language previously.
+https://www.moe.gov.sg/primary/c...
+If the foreign student enters the school system like everyone else in Primary One, they can take a Mother Tongue like everyone else. It is not unusual to drop the class as well, with approval from the Ministry of Education.
+If the foreign student enters the school system later, they can take the class at the same level if they have similar proficiency."
+"Is it true that FAANG programmers make their code over-complicated to prevent hackers from understanding them?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+to prevent hackers from understanding them
+
+You might be referring to code obfuscation.
+
+
+If you look at the code that is used to render the Facebook page, it is unintelligible. It makes it difficult to understand what is going on because variable and method names are encoded.
+It is intended to make it slightly more difficult for crawlers to crawl Facebook, or extensions to edit Facebook’s content.
+This is different from most of the answers to this question which talks about the source code. The programmers edit the source code, and the source code is used to generate the object code.
+Programmers don’t obfuscate the object code themselves, they use automated tools do that."
+"How good is Python for competitive programming?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+I agree that you should not use Python if you are doing competitive programming competitively.
+These are the situations where you should not learn Python
+IOI and related contests (Only C++ is allowed for IOI 2022)
+ICPC and related contests (good luck finding good teammates who also use Python)
+Even if you are doing competitive programming non-competitively, these are the obstacles that you may face
+Problems where the time constraints are tight. Sometimes, the author intends to disallow O(n3) solutions but allow O(n2 log n) solutions. Your Python solution, even though implemented in O(n2 log n), may be evaluated as Time Limit Exceeded.
+Problems with strong memory constraints. Some problems on Codeforces impose unusual memory constraints as little as 32MB. These problems may require the use of variables with a small bit length (like C++ short), which is not a feature of Python.
+Python grandmasters are few and far in between. There has only been one person who uses only Python, never C++, and reached Grandmaster.
+However, Python is actually a good language for non-competitive competitive programming.
+Most of the problems that solution will fail because you do not have a correct algorithm, not because of Python implementation.
+When you start out competitive programming, you want to learn to craft and implement algorithms fast. Python code is less verbose, and concepts can be seen more clearly.
+C++ is not that friendly to beginners - for example you need understand and juggle types and pointers. The same points that discusses what should be your first programming language also apply here.
+The most recent problem that Python gave me a bunch of TLE is Question 4 of a recent Google Kick Start problem.
+https://codingcompetitions.withg...
+There are also a few ways you can reduce the occurrence of TLE with Python code
+Use of PyPy3, which is a faster implementation of Python. Most competitive programming website has PyPy3 as a submission option. You do not need to change how you write the code, but usually implementations of PyPy3 do not implement libraries like numpy.
+Avoid calling functions recursively - see this comment for an explanation and a workaround. I use a different workaround - I defined a function to call when I enter a node, and another function to call when I exit a node, and track the progress of the depth first search with a hashmap and stack. You can see how I implement it in the linked solution from Kick Start.
+Avoid accessing list of lists. Probably you can use math and divmod to compute which indices should you access in the flattened matrix.
+Libraries. C++ and Java has binary search trees built in, but not Python. I actually extracted a copy of the sortedcontainers library for use in contests.
+Input output templates. I append input = sys.stdin.readline at the start of the code to read input faster. There is another template that is being used that is probably even faster."
+"In what order should I do LeetCode problems?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Consider a collection of problems. Each problem has
+some level of difficulty (easy, medium, hard)
+a set of topic tags (array, hashmap, graph, binary search, trie)
+You want to work on a new problem if at least one of the following is true
+The new problem has only one tag, and its difficulty is easy.
+There was a previous problem you have done that contains all of the tags of the new problem, and the new problem has a difficulty of at most one higher than the original problem.
+There was a previous problem you have done that contains all but one of the tags of the new problem, and the new problem is no more difficult than the previous problem.
+Your objective is to find a feasible order to complete all the problems, or return that it is impossible.
+I just described yet another LeetCode problem.
+But if you don’t have enough time and space complexity to think of this, make a list of problems to solve customized to your study schedule here!
+https://www.techinterviewhandboo..."
+"What does a competitive programmer resume look like?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+I do not think my competitive programmer “experience” was relevant in the decision on whether to offer me a job, but it did help me to get an interview. Companies recruit software engineers to build solutions, not ICPC teams to participate in World Finals.
+Probably the competitive programmer should just list their Codeforces rating, and probably also one or two of their most significant contest achievement. This should not occupy much space.
+I don’t think someone should have more than three lines on their contest experience - the Codeforces rating should already give a very good idea of the skill level to someone who knows competitive programming. The rest of the resume should describe work experience, education and projects instead.
+For reference, this is mine.
+
+
+Disclaimer:
+Visit my dank resume.
+[math]f(x) = \begin{cases} x & \text{if $x \gt 0$}\\ x^2 & \text{else} \end{cases}[/math]"
+"Is solving all leetcode problems currently ~1000 problems would help me advance in competitive programming?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+It will only get you somewhere, but not too far.
+This is someone who participated in 200 contests - solving almost 4 questions per contest without peeking at hints or the solution page.
+
+
+Leetcode problems can help to get you to Candidate Master, however, it is difficult to go beyond that by just doing Leetcode problems.
+If you want to achieve greater heights you will need to take a serious effort to learn the more advanced data structures (e.g. segment tree) and solve more complicated problems. Also, learning C++ for real would help as well."
+"Does the LeetCode contest have unique problems that are not in the problems platform?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Usually LeetCode contests do not have original problems, but since everyone solves it so quickly, you do not get an advantage from getting your solution from Google search.
+The purpose of LeetCode contests for LeetCode, as now I understand it, is to crowdsource solutions from contest participants to benchmark their interview problems, and to maintain some community to discuss interview problems.
+Also given how many people have tried to think of easy-to-explain contest problems for more than a decade now, it is quite hard to think of a truly unique easy-to-explain problem that is not trivial."
+"What is the benefit of getting points in LeetCode?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+You can exchange your points for a T-shirt, among other things. I have one.
+https://leetcode.com/store/"
+"What do Singaporeans think of Lawrence Wong?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Lawrence Wong is now the designate for the Prime Minister of Singapore.
+What most Singaporeans know about Lawrence Wong is how he handled Covid. For the past two years he has been trained to give press conferences almost daily, defending current policies and the changes to current policies. The policies include the initial decision to close borders, group-size restriction and relaxation, choice of vaccines, TraceTogether and SafeEntry, vaccination differentiation requirements, and most recently reopening of the cross-border travel with Malaysia. I believe has sufficient real-world training to take on the role of the Prime Minister of Singapore.
+
+Gif source
+Of course, I do disagree with some of the decisions. When Covid cases have risen to the thousands, I fail to see how TraceTogether and SafeEntry have not ceased to be useful tools for contact tracing. When most Singaporeans have received the second dose of the vaccines, I do not think most of the Covid restrictions make sense for vaccinated individuals. This copypasta was popular on r/singapore subreddit - and this might be indicative of populism and risk-averseness we will continue to see in policy making.
+What are you talking about? We already have a very clear and unambiguous roadmap. We are well on track to Stage A of our very concrete and well thought out roadmap.
+What are we opening up you ask? That is also very clearly laid out. We have done well, but there is more we need to do as we transition into a covid resilient nation. There are still many unknowns. We are studying what other countries are doing, and we will learn from their successes and mistakes, and also learn from our own successes and mistakes, and we will implement a plan to help us transition into a covid resilient nation that takes into account our unique situation. We need to be vigilant. We only got to where we are because of how hard we have worked, so we cannot squander what we have been given. We need to be #sgunited in order to reach our goal of being a covid resilient nation. The MMTF is keeping a close watch on the situation, and we will not hesitate to act when there is a need to. We know it has been a frustrating time for everyone, but we ask for your patience as we do all we can to make sure that Singapore transitions into a covid resilient nation.
+
+Lee Hsien Loong has offered to Singapore his sudoku solver, usually insightful commentary on foreign policy, and the vision for a “smart nation”, I am not sure what Lawrence Wong is offering besides continuing the tradition of how Singapore is governed.
+Ultimately, Lee Hsien Loong is not going to live forever and it is really time for Lee Hsien Loong to hand over the baton. Regardless, I am okay with a Prime Minister who can understand policy criticisms and defend policy decisions, with national interests at heart. That is all I am asking for, and it seems that Lawrence Wong has proven his ability in how he led the response to Covid."
+"What is the biggest current threat to LeetCode?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Not sure what the exact question that is being asked, I will answer regarding the threats faced by LeetCode as a business.
+To an outside observer, it seems that LeetCode’s primary source of income is LeetCode premium subscription. The main benefit of subscription is that you can access premium questions, and statistics on the frequency of questions asked by companies. It appears that if someone manages to get all the questions from LeetCode and the information on frequency of the interviewed questions, there is no more value LeetCode has to its subscribers.
+The list of questions from LeetCode has already been replicated in many places, although it seems that LeetCode is not invoking the copyright law as aggressively as CodeSignal. There are also many places where interview information is shared, such as in cscareers.dev, teamblind, and also on many other forums. These threats have already materialized, and LeetCode is still around, having new contests every week (some with merchandise as prizes) and updating the question bank.
+LeetCode has since diversified from have only subscription revenue. They have a Chinese platform - which not only have the same information as the international version, but also they also have tools for interview and testing, with their large database of questions and benchmarked solutions.
+https://e.leetcode-cn.com/
+Probably their biggest threat now is to be profitable in the long run with their diversification - I don’t have statistics on the amount of revenue they are getting from each source, relative to their expenditure."
+"What is the valuation of Quora (2017)?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+This answer is accurate as of 2017.
+https://techcrunch.com/2017/04/2...
+A bunch of investors decided to put in money ($85 million) thinking Quora is worth $1.8 billion - and that defines the valuation of Quora in 2017."
+"What background did Quora's ML team members have before joining Quora?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+I am from Singapore and I studied systems engineering at Singapore University of Technology and Design. I also happen to have a business administration degree.
+In many of my school courses, I use math and code to model systems - systems such as inventory systems and queuing systems - to analyze them and optimize identified aspects of the systems.
+I did not study computer science in detail, but my colleagues are happy to explain why Quora uses both column store and key-value store, for example. I took 1.5 courses in machine learning when I received the offer from Quora.
+I got the interview from the 2021 Quora Programming Challenge. In terms of the total score for ML problems, I am only behind tourist.
+I frequently participated in online coding competitions, which helped me to do well in Quora Programming Challenge. I was also lucky to be invited to some onsite challenges in Singapore where I made some friends. I also do some Kaggle competitions. I also have a very messy Github profile.
+I did some internships where I wrote some code, one of which I worked on a codebase where I learnt valuable skills on communicating requirements and writing clean code.
+I am excited to join Quora as I am very interested to learn the thought processes behind the product decisions of Quora, and to contribute to the development of Quora’s products."
+"What were some of the technical questions you were asked in your SUTD (Singapore University of Technology and Design) interview?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+It has been many years since my admission interview, and I not very familiar with the latest processes currently.
+I think technical questions are likely to be asked if you do not have excellent academic scores in the math and sciences. I think some of my friends were asked math questions (for example calculate an integral by parts, which is something I might not be able to do now to save my life). They did not score A or B in Singapore A Levels or equivalent.
+Meanwhile you can join the school Discord channel which is open to prospective students.
+https://www.reddit.com/r/sutd/co..."
+"Do you need a Social Security number while you are looking for an internship, or can you apply for it after getting an internship?
+
+Tong Hui Kang
+Lives in San Francisco Bay Area (2021-present)
+I recently started working in the US (November 2021).
+You can apply for your Social Security Number after you arrive in the US with a valid visa for work / internship.
+There are some extra administrative steps for not already having a Social Security Number before you work. This should not affect whether you are allowed to work, and should not delay the date you start work.
+You will be served with a Social Security Number Tentative Nonconfirmation, which can be resolved after you obtain your SSN.
+https://www.e-verify.gov/employe..."
+"Space Mechanics Test
+Not including a few keywords to show people what to expect if they join.
+
+How does ""spaces"" work in Quora?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+I am writing an answer to see what is going on.
+Is the qid associated with this answer same as the parent question from nospace or not? Let’s find out!"
+"As a software engineering candidate how will you handle a situation where you have no clue about how to solve a coding challenge when it is presented to you?
+
+Tong Hui Kang
+Studied at Singapore University of Technology and Design (2021)
+if you do not understand the question, ask questions until you understand the problem.
+When you understand the problem correctly, there is always a brute force solution. The brute force solution may be trying all combinations, permutations or arrangement of the input and write the solution with that. The solution may simply be simulating the scenario stated by the problem.
+You might get some credit for effort, communication, and probably for writing clean and correct code. Who knows, maybe when you implement your solution you find ways to improve the time complexity of the problem by a little."
+"How do I call a 1-800 number from abroad?
+
+Tong Hui Kang
+Lives in San Francisco Bay Area (2021-present)
+If you have a friend who is living in the country but you are out of the country, you can call your friend over WiFi on one device (Whatsapp / Telegram or anything else), and your friend will call the number with their phone. Your friend will put both devices on speaker and place them side by side.
+The main issue is that you need your friend to be in the country."
+"What are the problems with meritocracy?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Let me share and break down this excellent article to answer this question.
+https://www.todayonline.com/comm...
+The author explores four critiques of meritocracy (Singapore’s version).
+Meritocracy is problematic because meritocracy unfairly privileges those from higher socio-economic backgrounds.
+Those from higher socio-economic backgrounds are being rewarded by the system not because they are genuinely more meritorious than those from lower socio-economic backgrounds, but simply because their parents have been able to provide conducive home environments or purchase tuition.
+
+Meritocracy is problematic because the definition of merit is usually narrowly defined.
+The ability to pass examinations is one of a range of valuable skills we want to hone and reward, and it is one that is not even particularly useful in the workplace.
+
+Meritocracy is problematic because the rewards assigned with meritocracy is usually problematic. Children who score the best in examinations can enrol to an elite school. However, why do we even have elite schools? Is the fetishisation of elite schools good for society?
+Take for instance admission into a small range of elite schools or the award of prestigious scholarships.
+This criticism is concerned with the elitism that arises when we privilege a narrow range of rewards.
+
+Meritocracy is problematic because meritocracy perpetuates the narrative that people are where they are because of their merit.
+This national narrative, which is reproduced in the individual stories that Singaporeans tell themselves, is one of surmounting odds through hard work and skill.
+Those who succeed are proclaimed as legitimately deserving. What is left implicit is that those at the bottom have failed to be deserving.
+But this narrative fails to capture the multifaceted reasons why people may fail to succeed in Singapore’s system.
+According to those who advance this critique, the real culprit is the dominance of the system which perpetuates the sense of inferiority among those who are unrewarded."
+"What is the most popular chat app in Singapore?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Telegram is the most popular chat app in Singapore for young people, for the following reasons
+You can use it from almost anywhere - Mac, PC, Linux, iPhone or Android. I fell in love with Telegram when I can access it on a Raspberry Pi to copy terminal commands.
+There are simple bots that you can use to moderate discussions.
+Access to stickers. Messages are more interesting with words and emojis.
+Large userbase and network effect. Since everyone is on Telegram, you have to be on Telegram to communicate with Singaporeans. Many news channels and government agencies, and even my Member of Parliament, has a Telegram channel.
+Whatsapp is not preferred by young people now because
+People may not want their contacts to be accessible by Facebook/Meta for their other products
+Whatsapp, to their credit, is true end-to-end encryption. Unless you surrender your device and give them your password, in theory nobody else is not able to access your chats. However, this means that chat history is usually lost when you change devices. Most young people would rather keep the chat history by default.
+Spam messages. Even though I have more footprint on Telegram, I receive far more spam messages on Whatsapp than on Telegram."
+"Is the L2 point of Earth in a permanent shadow of the Earth?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+L2 is a point in outer space where the James Webb Telescope will orbit around (in other words, it will not stay in the L2 point). I was curious how the Sun and Earth looks like from L2, so I have done some calculations.
+The following data is collected from various pages in Wikipedia.
+Distance of Sun from L2 - 150 million kilometers
+Distance of Earth from L2 - 1.5 million kilometers
+Diameter (equatorial) of Earth - 12,756 km
+Diameter of Sun - 1,390,000 km
+These are some calculations from the values above.
+Diameter of Earth required to fully cover the Sun - 1/100 of 1,390,000 = 13,900 km
+Ratio of diameters = (12,756 / 13,900) = 91.7%
+Ratio of Sun covered = (12,756 / 13,900) ^ 2 = 84.2%
+This is how the Sun and Earth looks like from L2, consistent with the calculations above."
+"Is Wikipedia.org a legit site to use as a reference?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Wikipedia is usually a reliable source, but it is never a primary source. You need to cite primary sources of information."
+"As a software engineer, is frequent job hopping every year or two counterproductive to your career?
+
+Tong Hui Kang
+Software Engineer at Quora
+The only time when when it is good for you can do that is when you are also studying in a computer science related course. Job hopping at this time is called internships.
+Disclaimer:
+Visit my dank resume.
+[math]f(x) = \begin{cases} x & \text{if $x \gt 0$}\\ x^2 & \text{else} \end{cases}[/math]"
+"Is it true that LeetCode questions with a lot of downvotes are not worth solving?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Did a bit of Google search, I think hai_dee’s comment gave a few good examples, some explanation why these questions receive quite a number of downvotes and whether are they worth solving.
+https://leetcode.com/discuss/gen...
+Questions with the highest upvote/downvote ratio do not mean that they are most worth solving. There are questions that are worth solving but receive downvotes. There are questions that frequently asked in interviews and also receive downvotes.
+Ultimately, if you are preparing for an interview, you should decide which problems to solve rather than which problems not to solve.
+For a reasonable interview preparation, someone has posted a list of questions that has a good coverage of interview topics. It is more effective to master the patterns rather than pumping the numbers.
+https://techinterviewhandbook.or..."
+"Does Singapore's wealth come from stamp duty?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Stamp duty is the taxes paid to the government when buying or renting residential properties. For example, if you are buying property worth more than 100k, you need to pay a stamp duty on the price of the property, which may be between 1% to 24%.
+https://singaporelegaladvice.com...
+This is the planned Singapore government revenue and expenditure right before the Covid struck.
+
+
+https://www.reddit.com/r/singapo...
+Stamp duty was projected to contribute 4.29 billion dollars of the total of 105 billion dollars of Singapore budget (which include a planned deficit of 10.5 billion). Significant, but not a lot.
+The purpose of taxes is not to make Singapore government rich or “wealthy”, but to reallocate the resources to keep the country running. You can see how the money is spent - defense, education, health and transport.
+Some money is stashed for investment purposes - we see that part of the income is generated by investment returns. Money is also needed to be stashed to respond to crises such as Covid - because of Covid, Singapore incurred a deficit of $64.9 billion in 2020.
+https://www.todayonline.com/sing..."
+"Being a country near to equator line, why sunglasses are not popular among Singaporeans?
+
+Tong Hui Kang
+Singaporean
+Having just moved to California, now I understand why.
+It is exactly because Singapore is near the equator.
+The most practical reason of wearing sunglasses is when the sun is in your field of vision. This happens when are looking forward, you are looking at the sun. Sunglasses will help to reduce the glare.
+
+
+When the sun is overhead, you are not looking at the sun. You do not need sunglasses. Even though the surrounding may be very bright, it does not impair your vision as much as someone shining a bright torch at you.
+This is Singapore, which is near the equator. It is only in the evenings when the sun is in your field of vision, and only for a brief period of time - maybe an hour in the morning and in the evening.
+
+
+This is California, which is in the Northern Hemisphere. For many hours in the day, the sun can be in your field of vision if you are looking at a certain direction.
+
+
+Image source
+https://mydarksky.org/2009/12/22...
+Additional reasons include
+Driving is the main mode of transport in the US, and it is easy to driver to carry along with them their sunglasses. You need to drive to get anywhere in the US. In Singapore, public transport is cheap and convenient.
+Singapore is full of sheltered walkways, planted vegetation, and tall buildings, which blocks out sunlight.
+Singapore is usually hot and humid, and putting on sunglasses while sweating is a discomfort."
+"How do I step up LeetCode skills for a coding interview?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+A common bad habit of practicing on Leetcode is that people peek the solution, or even convince themselves that they understand the solution and copy and submit the solution. Make sure that you are not doing that.
+It should also not be end of the practice when you get AC for your submission. You should look at the most upvoted solutions of your language and see how the code could be better written in terms of logic and readability. You should also refactor and improve your code if possible.
+To better learn and integrate problems practiced, you need to identify patterns. There may be thousands and questions, but there are only a handful of patterns that is sufficient to tackle most coding interview questions.
+https://hackernoon.com/14-patter...
+Since you want to prepare for a coding interview, you also have to understand that Leetcode alone is not enough for an interview. You need to practice your communication skills as well. The best interview practice is the interview itself. The second pest practice is a mock interview with a friend.
+Are LeetCode contests (weekly/biweekly) a good way to prepare for coding interviews?"
+"What are the limitations of the R Shiny web app compared to other web apps built with other programming languages?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+You can compare the web apps built with R Shiny versus the web apps built with React (which includes Quora). This gives you a sense of the limitations of using R Shiny, and where the use of R Shiny is suitable.
+https://shiny.rstudio.com/gallery/
+I think R Shiny is great if you have zero frontend experience and want to quickly imitate an example from the gallery. The code that you will interact with is probably very short, and therefore easy to understand and make slight modifications to.
+This is an app that I have written with R Shiny, as a companion to some board game for a school project.
+https://esa-game-4.shinyapps.io/
+If you want to build advanced websites, you probably need to use widely used open source frameworks like React."
+"Is it worth spending time solving LeetCode’s very hard problems?
+
+Tong Hui Kang
+I have the LeetCode T-shirt
+Maybe.
+Usually, you need to do an online assessment even before you get a coding interview. Online assessments may contain very hard questions to set candidates apart. You might need to solve these questions to secure your place in the interview.
+I once did an online assessment question on expression evaluation that is harder than this. The problem redefined the order of operations and whether operations are executed from right to left instead of left to right.
+https://binarysearch.com/problem...
+For the coding interview however, there is little point in asking hard questions. Interviews should not be another online assessment where they watch you code yet another problem. Interviewers would want to see how you communicate. They would expect you to clarify the question and the constraints, and analyse the correctness and complexity of your code. Asking hard questions makes it difficult to receive these signals."
+"How can a software engineer write a killer resume?
+
+Tong Hui Kang
+Software Engineer at Quora
+In the cscareers.dev discord channel, these resume templates are pinned.
+Jake's Resume - an overleaf template that you can copy and use
+
+
+Resumake - make a resume without installing or signing up for anything
+
+
+I feel these are excellent resume templates that provide a good first impression of your experience. I recommend against making your own template unless it is better than these templates.
+Resumes are usually automatically parsed to extract keywords, and the resume template presented above are accurately parsed by one resume parser.
+With the formatting out of the way, you can now focus on the language. Where you worked and where you studied are facts that you cannot change or sugarcoat. You could only optimize the description of your experience in the companies. This is where you should put most of your thoughts on.
+This is the resume that got me two offers, without brand-name companies in my experience.
+
+
+You need to summarize your work experience in around three statements. In the interview, be prepared to elaborate on each of the statements.
+How you want to craft your line depends on your preferences and experience. One piece of advice is to load each statement with metrics, but I did not do that because I could not do that for each of my internships. Moreover, I would prefer to keep statements in one line to make the resume look neater on an A4 paper.
+TL;DR - use the templates, and worry only about how to describe your experience."
+"Why did many Chinese emperors issue an edict of repentance to the whole empire to confess and repent for their mistakes and to pledge to Heaven and their people to rectify their mistakes? Didn't it affect their authority?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+I remember there was a child emperor who made some mistake and forced by his teacher to repent in court. Then when he grew up, he executed or exiled the teacher. The teacher had been managing the economy of the empire well. The fall the dynasty then began.
+If anyone has an idea who is the child emperor and the teacher please comment :)"
+"Does Singapore need to move away from the inflexible British-based education system and towards a more flexible system that emphasizes continuous testing?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+I presume the British-based education system refers to the O and A levels, in addition to PSLE. Singaporean students who prefer continuous testing may already opt for the IB curriculum at certain high schools.
+In the Singapore education system, admission to primary schools, secondary schools, junior colleges and polytechnics almost completely depends on the final national exams. It is possible to have zero school attendance (with permission if possible) except during the national exams, and you get your placements in the desired course with the examination certificate. This means there is almost no continuous testing in mainstream Singapore schools.
+There was already some forms of continuous testing in the current system. They are not popular.
+Science Practical Assessment (or SPA) is carried out for science subjects in the O and A levels. This is done a few months before the national examinations, and not all students take the assessment at the same time, even if they are from the same school.
+A level Project Work. Admittedly, it is a much-needed sample of group projects in the universities and the real world. However, how junior colleges administer the course vary in quality, tutors from the same junior college also vary in quality.
+It is more difficult to standardise continuous assessment. Even for national examinations, the quality of teaching material produced already vary greatly among schools, even though they come from the same funding source. Fairness and meritocracy is an important principle in the Singapore education system, and many of us would prefer not to sacrifice any more of these.
+The current approach to continuous assessment is to treat it as a low-risk low-stakes assessment where the impact on the final grades is limited as long as the student has done their homework.
+I have no idea why continuous testing is more flexible than one with only final examinations. As long as the programme is regulated by an international institution, there are a syllabus to follow and deadlines to meet. Only universities and polytechnics with degree and diploma-granting powers have the flexibility to modify the courses."
+"Are white people who serve NS in Singapore treated better (command school, less severe punishments, etc.), or are they treated just like any other recruit/soldier?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+Punishments in the bootcamp is meted out collectively. If one person is late, the buddy, the section, the platoon, the company is also usually punished by the trainer.
+Even if institutions and regulations may designed to be race-blind (which is unfortunately not, but that is another story), people are not. Whether your peers like or dislike you depends on a large variety of complex factors, and one of which is being white. You need positive approval from your section mates to go to the command school.
+However, there is this concept the white horse. White horse are children of influential families. If there is a difference in the treatment between recruits from different companies, recruits usually attribute the difference to the existence of a white horse. This is of course usually not proven."
+"Why does the government of Singapore call visas ""passes""? It seems governments of other English-speaking countries (US, UK, Canada, Australia, Ireland, New Zealand, etc.) just call visas ""visas"".
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+It seems that there is some intention of the difference in nomenclature.
+https://www.mfa.gov.sg/Overseas-...
+13. What is the difference between visa and visit pass?
+Answer: Visitors must note that Singapore visa is not an immigration pass. It is a pre-entry permission for the holder of a valid Singapore visa to travel to, and seek entry, into Singapore. Possessing a valid visa does not guarantee entry into Singapore.
+
+My interpretation is that visa is related to whether can you come into Singapore, and the type of pass is related to what can you do in Singapore.
+Citizen of some countries can travel into Singapore visa-free, while citizens of other countries need to apply for a visa to Singapore and have it approved by Singapore.
+https://www.ica.gov.sg/enter-dep...
+However, even if you have a visa and managed to enter Singapore, the activities you can do in Singapore are limited. If you want to study, work or rent in Singapore, you need to apply for a pass. If you are coming in only as a tourist, you do not need a pass.
+https://www.mom.gov.sg/passes-an..."
+"What are the role and power of a Second Minister in Singapore? There are Second Ministers in many ministries besides the Minister.
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+This is the official and current list of ministers.
+https://www.pmo.gov.sg/The-Cabinet
+This is the Singapore Cabinet presented in another format, as of writing.
+https://en.wikipedia.org/wiki/Fi...
+Beside Ministers, there are “Minister of State”, “Senior Minister of State”, “Parliamentary Secretary” and “Senior Parliamentary Secretary”. These elected politicians will assist the Minister in policy-making. The roles are also opportunities for the junior ministers to prove themselves before they lead the ministry.
+It seems that all Second Ministers are already full Ministers in some ministry (which includes “Minister in the Prime Minister Office”). A second minister is probably not a training role. A second minister probably has the same power and responsibilities as the full minister. Ultimately, the Cabinet operates as a team and failure and successes are shared."
+"Which Singaporean universities are best for architecture?
+
+Tong Hui Kang
+Machine Learning Engineer in Recommendations
+There are two public universities in Singapore offering architecture - National University of Singapore and Singapore University of Technology and Design.
+https://www.reddit.com/r/SGExams...
+The insights provided by u/HypothesisTesting is consistent with what I hear."
